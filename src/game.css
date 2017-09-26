@@ -1,0 +1,25 @@
+.game {
+    width: 90%;
+    margin: 10% auto;
+    text-align: center;
+    max-width: 900px;
+}
+
+h1 {
+    display: inline-flex;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+p {
+  text-align: center;
+max-width: 500px;
+margin: auto;
+font-family: 'Josefin Sans', sans-serif;
+margin-bottom: 60px;
+width: 90%;
+}
