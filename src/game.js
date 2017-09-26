@@ -1,11 +1,13 @@
 import React from "react"
 import Card from "./card"
+import Counter from "./counter"
 import './game.css';
 
 const Game = () => (
   <div className="game">
-      <h1>Find all the cats</h1>
-      <p>Cats are smart, freaky and unpredictable creatures.<br/>Can you find them all?</p>
+      <img className="logotype" src="/images/logo.png" />
+      <p>All of the cats have lost their super identical twin.<br/>Can you help find them all?</p>
+      <Counter />
       <Card src="/images/cat1.jpg" />
       <Card src="/images/cat2.jpg" />
       <Card src="/images/cat3.jpg" />

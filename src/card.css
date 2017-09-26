@@ -1,6 +1,7 @@
 .card {
     width: 33.3333333%!important;
     float: left;
+    height: 260px;
     overflow: hidden;
 }
 
@@ -11,14 +12,13 @@
     border-radius: 160px;
     height: auto;
     margin: 15px auto;
-    margin-top: 5px!important;
     opacity: 1;
     transition: all 0.3s ease;
 }
 
 .card img:hover {
     opacity: 0.8;
+    margin: 10px auto;
     max-width: 240px;
-    margin-bottom: 0!important;
-    margin-top: 0px!important;
+
 }
