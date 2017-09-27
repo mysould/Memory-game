@@ -8,8 +8,8 @@ class Card extends React.Component {
 //the function we called from onCLick. We give it name and it
 // takes no arguments.
 // Is in class has access to 'this.'
-  handleClick = () =>{
-    alert("i was clicked" + this.props.src)
+  handleClick = () => {
+    this.props.onClick(this.props.src)
   }
 
 // render() is a requierd function to our Component.

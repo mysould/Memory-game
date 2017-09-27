@@ -15,6 +15,10 @@ const photos = [
 
 class Game extends React.Component {
 
+  handleCardClicked = (cardSrc) => {
+    console.log(cardSrc)
+  }
+
 
   constructor(props) {
     super(props)
@@ -36,27 +40,20 @@ class Game extends React.Component {
   }
 
 
-  renderCard = (something) => {
-    return <Card src = {
-      something.src
-    }
-    />
+  renderCard = (card) => {
+    return <Card src = {card.src} onClick={this.handleCardClicked} />
   }
 
 
   render() {
     return ( <
         div className = "game" >
-        <
-        img className = "logotype"
-        src = "/images/logo.png" / >
-        <
-        p > All of the cats have lost their super identical twin. < br / > Can you help find them all ? < /p> {
+        <img className = "logotype" src = "/images/logo.png" / >
+        <p> All of the cats have lost their super identical twin. < br / > Can you help find them all ? < /p> {
         this.state.cards.map(this.renderCard)
       }
 
-      <
-      /div>
+      </div>
   )
 }
 }
