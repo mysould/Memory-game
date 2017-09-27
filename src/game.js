@@ -2,6 +2,7 @@ import React from "react"
 import Card from "./card"
 import Counter from "./counter"
 import './game.css';
+import shuffle from "shuffle-array"
 
 const photos = [
   "/images/cat1.jpg",
@@ -24,11 +25,13 @@ class Game extends React.Component {
 
   setupGame = () => {
     const dubblePhotos = photos.concat(photos)
+    shuffle(dubblePhotos)
     return dubblePhotos.map((url) => ({
       src: url,
       isFlipped: false,
       isMatched: false
     }))
+
 
   }
 
