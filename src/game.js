@@ -25,7 +25,7 @@ class Game extends React.Component {
 
   setupGame = () => {
     const dubblePhotos = photos.concat(photos)
-    shuffle(dubblePhotos)
+    const shuffledPhotos = shuffle(dubblePhotos)
     return dubblePhotos.map((url) => ({
       src: url,
       isFlipped: false,
