@@ -1,20 +1,22 @@
 .game {
-    width: 90%;
-    margin: 50px auto;
-    text-align: center;
-    max-width: 900px;
+  width: 90%;
+  margin: 50px auto;
+  text-align: center;
+  max-width: 700px;
 }
 
 img.logotype {
-    width: 200px;
-    margin-bottom: 20px;
+  width: 200px;
+  margin-bottom: 20px;
 }
 
 p {
   text-align: center;
-max-width: 500px;
-margin: auto;
-font-family: 'Josefin Sans', sans-serif;
-margin-bottom: 60px;
-width: 90%;
+  color: #fff;
+  max-width: 500px;
+  font-size: 17px;
+  margin: auto;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-bottom: 60px;
+  width: 90%;
 }
