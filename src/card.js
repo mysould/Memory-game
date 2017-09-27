@@ -9,7 +9,8 @@ class Card extends React.Component {
 // takes no arguments.
 // Is in class has access to 'this.'
   handleClick = () => {
-    this.props.onClick(this.props.src)
+    //passed function
+    this.props.whenClicked(this.props.key)
   }
 
 // render() is a requierd function to our Component.
@@ -20,7 +21,7 @@ class Card extends React.Component {
   // <Card /> in game, props becomes object
   return(
       <div className = "card" onClick={this.handleClick}>
-        <img src = {this.props.src}/>
+        <img src = {this.props.src} />
       </div >
   )
   }

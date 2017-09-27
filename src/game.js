@@ -1,8 +1,8 @@
 import React from "react"
 import Card from "./card"
-import Counter from "./counter"
 import './game.css';
 import shuffle from "shuffle-array"
+import uuidv4 from "uuid/v4"
 
 const photos = [
   "/images/cat1.jpg",
@@ -15,7 +15,10 @@ const photos = [
 
 class Game extends React.Component {
 
+//new function which will take one argument,
+// a "card src" and logged it
   handleCardClicked = (cardSrc) => {
+    //passed function from card
     console.log(cardSrc)
   }
 
@@ -33,7 +36,8 @@ class Game extends React.Component {
     return dubblePhotos.map((url) => ({
       src: url,
       isFlipped: false,
-      isMatched: false
+      isMatched: false,
+      id: uuidv4()
     }))
 
 
@@ -41,7 +45,14 @@ class Game extends React.Component {
 
 
   renderCard = (card) => {
-    return <Card src = {card.src} onClick={this.handleCardClicked} />
+    //lägg till function till card och skicka till card.js
+    //key unique identifier from array
+    //id unique identifier we can use
+    return <Card
+      src={card.src}
+      key={card.id}
+      id={card.id}
+      whenClicked={this.handleCardClicked} />
   }
 
 
